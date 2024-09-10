@@ -29,18 +29,21 @@ archinstall
 ## PART 2: POSTINSTALL
 ### ONE CODE
 ```sh
-sudo pacman -S --needed base-devel git && git clone https://aur.archlinux.org/yay-git ~/Yay && cd ~/Yay && makepkg -si --noconfirm && cd && yay -S --noconfirm google-chrome && sudo pacman -S --noconfirm bluez blueman bluez-utils && sudo modprobe btusb && sudo systemctl enable bluetooth && sudo systemctl start bluetooth
+sudo pacman -S --needed base-devel git && git clone https://aur.archlinux.org/yay-git ~/Yay && cd ~/Yay && makepkg -si --noconfirm && cd ~/ && sudo pacman -S --noconfirm bluez blueman bluez-utils && sudo modprobe btusb && sudo systemctl enable bluetooth && sudo systemctl start bluetooth && 
 ```
-### STEP 1: YAY
+### STEP 1: AUR (YAY)
 ```sh
 sudo pacman -S --needed base-devel git &&
 git clone https://aur.archlinux.org/yay-git ~/Yay &&
 cd ~/Yay &&
 makepkg -si --noconfirm &&
-cd &&
-yay -S --noconfirm google-chrome &&
+cd ~/
+```
+### STEP 2: BLUETOOTH SUPPORT
+```sh
 sudo pacman -S --noconfirm bluez blueman bluez-utils &&
 sudo modprobe btusb &&
 sudo systemctl enable bluetooth &&
 sudo systemctl start bluetooth
 ```
+### STEP 3: 
