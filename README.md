@@ -1,22 +1,12 @@
 # KDE-Plasma-Setup
-## PART1: PREINSTALL
-### STEP1: DISK PARTITIONING
+## PART 1: PREINSTALL
+### STEP 1: DISK PARTITIONING
 ```sh
 lsblk
-```
-```sh
 cfdisk /dev/sda
-```
-```sh
 mkfs.fat -F32 /dev/nvme0n1p6
-```
-```sh
 mkfs.ext4 /dev/nvme0n1p7
-```
-```sh
 mount /dev/nvme0n1p7 /mnt
-```
-```sh
 mkdir /mnt/boot && mount /dev/nvme0n1p6 /mnt/boot
 ```
 ### STEP2: INTERNET
@@ -31,23 +21,8 @@ ping -c3 1.1.1.1
 pacman -Syy && pacman-key --init && pacman-key --populate archlinux && pacman -S --noconfirm archlinux-keyring archinstall && archinstall
 ```
 
-Personally Customized KDE Plasma Setup <br>
-```sh
-sudo pacman -S --needed base-devel git &&
-git clone https://aur.archlinux.org/yay-git ~/Yay &&
-cd ~/Yay/yay-git &&
-makepkg -si &&
-cd &&
-yay -S --noconfirm google-chrome
-```
-```sh
-sudo pacman -S --needed base-devel git &&
-git clone https://aur.archlinux.org/yay-git ~/Yay &&
-cd ~/Yay/yay-git &&
-makepkg -si &&
-cd &&
-yay -S --noconfirm google-chrome
-```
+## PART 2: POSTINSTALL
+### STEP 1: YAY
 ```sh
 sudo pacman -S --needed base-devel git &&
 git clone https://aur.archlinux.org/yay-git ~/Yay &&
