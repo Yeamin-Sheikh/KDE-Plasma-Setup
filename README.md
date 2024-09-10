@@ -12,7 +12,8 @@ mkdir /mnt/boot && mount /dev/nvme0n1p6 /mnt/boot
 ### STEP2: INTERNET
 ```sh
 iwctl
-station wlan0 connect `wifiname`
+station wlan0 connect _Wi-Fi Name_
+_Password_
 exit
 ping -c3 1.1.1.1
 ```
