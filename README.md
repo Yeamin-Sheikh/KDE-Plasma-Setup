@@ -51,8 +51,11 @@ sudo systemctl start bluetooth
 sudo pacman -S --noconfirm obs-studio &&
 sudo pacman -S --noconfirm proxychains-ng
 sudo pacman -S --noconfirm ldns &&
+sudo pacman -S --noconfirm auto-cpufreq &&
 sudo pacman -S --noconfirm npm &&
+sudo pacman -S --noconfirm gimp &&
 sudo pacman -S --noconfirm flatpak &&
+sudo pacman -S --noconfirm ufw &&
 sudo pacman -S --noconfirm timeshift && 
 sudo pacman -S --noconfirm telegram-desktop && 
 sudo pacman -S --noconfirm discord && 
@@ -62,11 +65,22 @@ sudo pacman -S --noconfirm vim &&
 sudo pacman -S --noconfirm flameshot  && 
 sudo pacman -S --noconfirm viewnior  && 
 sudo pacman -S --noconfirm libreoffice-fresh &&
-yay -S --noconfirm jdk &&
+sudo pacman -S --noconfirm p7zip && 
+sudo pacman -S --noconfirm unrar && 
+sudo pacman -S --noconfirm tar && 
+sudo pacman -S --noconfirm rsync && 
+sudo pacman -S --noconfirm exfat-utils && 
+sudo pacman -S --noconfirm fuse-exfat && 
+sudo pacman -S --noconfirm ntfs-3g && 
+sudo pacman -S --noconfirm flac && 
+sudo pacman -S --noconfirm jasper && 
+sudo pacman -S --noconfirm aria2 &&
+sudo pacman -S --noconfirm jdk-openjdk &&
 yay -S --noconfirm caprine &&
 yay -S --noconfirm ticktick  &&
 yay -S --noconfirm spotify &&
 yay -S --noconfirm visual-studio-code-bin &&
+yay -S --noconfirm preload
 ```
 ### STEP: JERRY
 ```sh
@@ -106,7 +120,17 @@ sudo nano /etc/proxychains.conf
 # nohup proxychains application_name
 ```
 ```sh
-
+sudo ufw status &&
+sudo systemctl enable ufw &&
+sudo systemctl start ufw &&
+sudo systemctl status ufw &&
+#Firewall
+```
+```sh
+sudo systemctl enable preload &&
+sudo systemctl start preload &&
+sudo systemctl status preload
+# Preload
 ```
 ### EXTRA COMMANDS:
 ```sh
@@ -134,9 +158,18 @@ yay -S --noconfirm davinci-resolve
 # Davinci Resolve
 ```
 ```sh
-
+sudo pacman -S --noconfirm reflector &&
+sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak &&
+sudo reflector --verbose --latest 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+# Mirrorlist
+```
+```sh
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+# https://youtu.be/odgD_RdJjCU?si=oMMWW0X2OTmyxIDH&t=327
+# Update the Grub
 ```
 ### NOTES
 ```sh
 Get Brave, Free Download Manager & Calculator from Flatpak
+Setup auto-cpufreq
 ```
