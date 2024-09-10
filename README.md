@@ -20,8 +20,7 @@ ping -c3 1.1.1.1
 ```
 ### STEP3: ARCHINSTALL
 ```sh
-pacman -Syy &&
-pacman-key --init &&
+pacman -Syy && pacman-key --init &&
 pacman-key --populate archlinux &&
 pacman -S --noconfirm archlinux-keyring archinstall &&
 archinstall
