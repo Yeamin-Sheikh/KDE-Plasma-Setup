@@ -7,9 +7,10 @@ cfdisk /dev/nvme0n1
 mkfs.fat -F32 /dev/nvme0n1p6
 mkfs.ext4 /dev/nvme0n1p7
 mount /dev/nvme0n1p7 /mnt
-mkdir /mnt/boot && mount /dev/nvme0n1p6 /mnt/boot
+mkdir /mnt/boot &&
+mount /dev/nvme0n1p6 /mnt/boot
 ```
-### STEP2: INTERNET
+### STEP2: INTERNET CONNECTION
 ```sh
 iwctl
 station wlan0 connect wifiname
@@ -19,7 +20,11 @@ ping -c3 1.1.1.1
 ```
 ### STEP3: ARCHINSTALL
 ```sh
-pacman -Syy && pacman-key --init && pacman-key --populate archlinux && pacman -S --noconfirm archlinux-keyring archinstall && archinstall
+pacman -Syy &&
+pacman-key --init &&
+pacman-key --populate archlinux &&
+pacman -S --noconfirm archlinux-keyring archinstall &&
+archinstall
 ```
 
 ## PART 2: POSTINSTALL
