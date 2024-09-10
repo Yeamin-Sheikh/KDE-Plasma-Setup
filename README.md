@@ -3,10 +3,20 @@
 ### STEP1: DISK PARTITIONING
 ```sh
 lsblk
+```
+```sh
 cfdisk /dev/sda
+```
+```sh
 mkfs.fat -F32 /dev/nvme0n1p6
+```
+```sh
 mkfs.ext4 /dev/nvme0n1p7
+```
+```sh
 mount /dev/nvme0n1p7 /mnt
+```
+```sh
 mkdir /mnt/boot && mount /dev/nvme0n1p6 /mnt/boot
 ```
 ### STEP2: INTERNET
