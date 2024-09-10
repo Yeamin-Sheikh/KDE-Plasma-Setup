@@ -29,5 +29,9 @@ git clone https://aur.archlinux.org/yay-git ~/Yay &&
 cd ~/Yay/yay-git &&
 makepkg -si &&
 cd &&
-yay -S --noconfirm google-chrome
+yay -S --noconfirm google-chrome &&
+sudo pacman -S --noconfirm bluez blueman bluez-utils &&
+sudo modprobe btusb &&
+sudo systemctl enable bluetooth &&
+sudo systemctl start bluetooth
 ```
