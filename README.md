@@ -27,7 +27,7 @@ pacman -Syy && pacman-key --init && pacman-key --populate archlinux && pacman -S
 sudo pacman -S --needed base-devel git &&
 git clone https://aur.archlinux.org/yay-git ~/Yay &&
 cd ~/Yay &&
-makepkg -si &&
+makepkg -si --noconfirm &&
 cd &&
 yay -S --noconfirm google-chrome &&
 sudo pacman -S --noconfirm bluez blueman bluez-utils &&
