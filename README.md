@@ -12,7 +12,7 @@ mkdir /mnt/boot && mount /dev/nvme0n1p6 /mnt/boot
 ### STEP2: INTERNET
 ```sh
 iwctl
-station wlan0 connect NotAVirus.exe_5G
+station wlan0 connect `wifiname`
 exit
 ping -c3 1.1.1.1
 ```
