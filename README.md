@@ -3,7 +3,7 @@
 ### STEP 1: DISK PARTITIONING
 ```sh
 lsblk
-cfdisk /dev/sda
+cfdisk /dev/nvme0n1
 mkfs.fat -F32 /dev/nvme0n1p6
 mkfs.ext4 /dev/nvme0n1p7
 mount /dev/nvme0n1p7 /mnt
