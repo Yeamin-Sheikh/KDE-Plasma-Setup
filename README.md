@@ -1,8 +1,11 @@
 # KDE-Plasma-Setup
 Personally Customized KDE Plasma Setup <br>
-`one line code` <br>
-``double line code`` <br>
+`sh
+what
+`
+``sh
+what are you?
+``
 ```sh
-triple line code
-``` <br>
-
+what are you 3?
+```
