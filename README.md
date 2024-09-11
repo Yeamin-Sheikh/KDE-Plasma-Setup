@@ -75,6 +75,7 @@ sudo pacman -S --noconfirm flac &&
 sudo pacman -S --noconfirm jasper && 
 sudo pacman -S --noconfirm aria2 &&
 sudo pacman -S --noconfirm jdk-openjdk &&
+sudo pacman -S --noconfirm dust &&
 yay -S --noconfirm caprine &&
 yay -S --noconfirm ticktick  &&
 yay -S --noconfirm spotify &&
