@@ -82,7 +82,7 @@ yay -S --noconfirm visual-studio-code-bin &&
 yay -S --noconfirm preload &&
 yay -S --noconfirm auto-cpufreq
 ```
-### STEP: JERRY
+### STEP 4: JERRY
 ```sh
 sudo pacman -S --noconfirm grep &&
 sudo pacman -S --noconfirm sed &&
