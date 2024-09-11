@@ -51,7 +51,6 @@ sudo systemctl start bluetooth
 sudo pacman -S --noconfirm obs-studio &&
 sudo pacman -S --noconfirm proxychains-ng
 sudo pacman -S --noconfirm ldns &&
-sudo pacman -S --noconfirm auto-cpufreq &&
 sudo pacman -S --noconfirm npm &&
 sudo pacman -S --noconfirm gimp &&
 sudo pacman -S --noconfirm flatpak &&
@@ -81,6 +80,7 @@ yay -S --noconfirm ticktick  &&
 yay -S --noconfirm spotify &&
 yay -S --noconfirm visual-studio-code-bin &&
 yay -S --noconfirm preload
+yay -S --noconfirm auto-cpufreq
 ```
 ### STEP: JERRY
 ```sh
