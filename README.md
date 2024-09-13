@@ -60,7 +60,8 @@ sudo pacman -S --noconfirm telegram-desktop &&
 sudo pacman -S --noconfirm discord && 
 sudo pacman -S --noconfirm fastfetch && 
 sudo pacman -S --noconfirm nano && 
-sudo pacman -S --noconfirm vim && 
+sudo pacman -S --noconfirm vim &&
+sudo pacman -S --noconfirm xorg-xrandr
 sudo pacman -S --noconfirm flameshot  && 
 sudo pacman -S --noconfirm viewnior  && 
 sudo pacman -S --noconfirm libreoffice-fresh &&
