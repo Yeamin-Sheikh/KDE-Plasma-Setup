@@ -1,7 +1,3 @@
-Config error in file /home/yeaminsheikh/.conf/hypr/hyprland/colors.conf at line 9: rgb() expects length of 8 characters (4 bytes) or 4 comma separated values.
-
-Config error in file /home/yeaminsheikh/.config/hypr/hyprland.conf at line 9: Config error in file /home/yeaminsheikh/.config/hypr/hyprland/colors.conf at line 9: rgba() expects length of 8 characters (4 bytes) or 4 commas separated values.
-
 # KDE-Plasma-Setup
 ## PART 1: PREINSTALL
 ### STEP 1: DISK PARTITIONING
@@ -53,7 +49,7 @@ sudo systemctl start bluetooth
 ### STEP 3: ADDITIONAL PROGRAMS
 ```sh
 sudo pacman -S --noconfirm obs-studio &&
-sudo pacman -S --noconfirm proxychains-ng
+sudo pacman -S --noconfirm proxychains-ng &&
 sudo pacman -S --noconfirm ldns &&
 sudo pacman -S --noconfirm npm &&
 sudo pacman -S --noconfirm gimp &&
@@ -81,6 +77,7 @@ sudo pacman -S --noconfirm jasper &&
 sudo pacman -S --noconfirm aria2 &&
 sudo pacman -S --noconfirm jdk-openjdk &&
 sudo pacman -S --noconfirm dust &&
+yay -S --noconfirm brave &&
 yay -S --noconfirm caprine &&
 yay -S --noconfirm ticktick  &&
 yay -S --noconfirm spotify &&
