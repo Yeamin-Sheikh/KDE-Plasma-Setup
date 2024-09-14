@@ -1,3 +1,7 @@
+Config error in file /home/yeaminsheikh/.conf/hypr/hyprland/colors.conf at line 9: rgb() expects length of 8 characters (4 bytes) or 4 comma separated values.
+
+Config error in file /home/yeaminsheikh/.config/hypr/hyprland.conf at line 9: Config error in file /home/yeaminsheikh/.config/hypr/hyprland/colors.conf at line 9: rgba() expects length of 8 characters (4 bytes) or 4 commas separated values.
+
 # KDE-Plasma-Setup
 ## PART 1: PREINSTALL
 ### STEP 1: DISK PARTITIONING
