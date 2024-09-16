@@ -27,10 +27,6 @@ pacman -S --noconfirm archlinux-keyring archinstall &&
 archinstall
 ```
 ## PART 2: POSTINSTALL
-### ONE CODE
-```sh
-sudo pacman -S --needed base-devel git && git clone https://aur.archlinux.org/yay-git ~/Yay && cd ~/Yay && makepkg -si --noconfirm && cd ~/ && sudo pacman -S --noconfirm bluez blueman bluez-utils && sudo modprobe btusb && sudo systemctl enable bluetooth && sudo systemctl start bluetooth && sudo pacman -S --noconfirm obs-studio && sudo pacman -S --noconfirm proxychains-ng sudo pacman -S --noconfirm ldns && sudo pacman -S --noconfirm npm && sudo pacman -S --noconfirm gimp && sudo pacman -S --noconfirm flatpak && sudo pacman -S --noconfirm ufw && sudo pacman -S --noconfirm timeshift &&  sudo pacman -S --noconfirm telegram-desktop &&  sudo pacman -S --noconfirm discord &&  sudo pacman -S --noconfirm fastfetch &&  sudo pacman -S --noconfirm nano &&  sudo pacman -S --noconfirm vim &&  sudo pacman -S --noconfirm flameshot  &&  sudo pacman -S --noconfirm viewnior  &&  sudo pacman -S --noconfirm libreoffice-fresh && sudo pacman -S --noconfirm p7zip &&  sudo pacman -S --noconfirm unrar &&  sudo pacman -S --noconfirm tar &&  sudo pacman -S --noconfirm rsync &&  sudo pacman -S --noconfirm exfat-utils &&  sudo pacman -S --noconfirm fuse-exfat &&  sudo pacman -S --noconfirm ntfs-3g &&  sudo pacman -S --noconfirm flac &&  sudo pacman -S --noconfirm jasper && sudo pacman -S --noconfirm aria2 && sudo pacman -S --noconfirm jdk-openjdk && yay -S --noconfirm caprine && yay -S --noconfirm ticktick  && yay -S --noconfirm spotify && yay -S --noconfirm visual-studio-code-bin && yay -S --noconfirm preload && yay -S --noconfirm auto-cpufreq && sudo pacman -S --noconfirm grep && sudo pacman -S --noconfirm sed && sudo pacman -S  --noconfirm curl && sudo pacman -S  --noconfirm fzf && sudo pacman -S  --noconfirm mpv && sudo pacman -S  --noconfirm rofi && sudo pacman -S  --noconfirm jq && yay -S --noconfirm ueberzugpp && sudo curl -sL github.com/justchokingaround/jerry/raw/main/jerry.sh -o /usr/local/bin/jerry && sudo chmod +x /usr/local/bin/jerry && jerry -e && jerry -c
-```
 ### STEP 1: AUR (YAY)
 ```sh
 sudo pacman -S --needed base-devel git &&
@@ -61,7 +57,7 @@ sudo pacman -S --noconfirm discord &&
 sudo pacman -S --noconfirm fastfetch && 
 sudo pacman -S --noconfirm nano && 
 sudo pacman -S --noconfirm vim &&
-sudo pacman -S --noconfirm xorg-xrandr
+sudo pacman -S --noconfirm xorg-xrandr &&
 sudo pacman -S --noconfirm flameshot  && 
 sudo pacman -S --noconfirm viewnior  && 
 sudo pacman -S --noconfirm libreoffice-fresh &&
